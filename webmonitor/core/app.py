@@ -18,6 +18,7 @@ class App:
     @classmethod
     def run(cls):
         self = cls()
+        #注册退出信号
         self.register_sign()
         self.start()
 

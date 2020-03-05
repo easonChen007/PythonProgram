@@ -1,3 +1,6 @@
 telethon
 pyyaml
 PySocks
+requests
+lxml
+selenium
