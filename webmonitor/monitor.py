@@ -1,6 +1,11 @@
 import requests
 import time
 import lxml.html
+import sys
+
+from core.app import *
+from core.log.common_log import CommonLog
+
 '''
 source = requests.get('https://www.thenorthface.com/shop/1990-mountain-jacket-gtx-nf0a3xco-c1?variationId=9B8#hero=0').content
 
@@ -9,6 +14,17 @@ post_title_list = selector.xpath('//*[@id="product-attr-form"]/section[1]/div[2]
 for post_title in post_title_list:
     print(  post_title)
 '''
+
+def main():
+    App.run()
+
+if __name__ == '__main__':
+    main()
+    
+
+while True:
+ pass
+
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
