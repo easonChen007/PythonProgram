@@ -26,7 +26,7 @@ AUTO_CODE_ACCOUNT = {  # 使用 free 可用省略
 # 地址：易源 https://market.aliyun.com/products/57126001/cmapi019902.html
 # 2019-01-18 更新
 # 增加新的服务商 鼎信 https://market.aliyun.com/products/56928004/cmapi026600.html?spm=5176.2020520132.101.2.e27e7218KQttQS
-NOTIFICATION_BY_VOICE_CODE = 1  # 开启语音通知
+NOTIFICATION_BY_VOICE_CODE = 0  # 开启语音通知
 NOTIFICATION_VOICE_CODE_TYPE = 'dingxin'  # 语音验证码服务商  可用项 dingxin  yiyuan
 NOTIFICATION_API_APP_CODE = 'your app code'
 NOTIFICATION_VOICE_CODE_PHONE = 'your phone'  # 接受通知的手机号
@@ -45,8 +45,8 @@ DINGTALK_WEBHOOK = 'https://oapi.dingtalk.com/robot/send?access_token=your token
 # 注意：因为以上Bot都由他人公益提供，无法保证随时可用，如以上Bot都无法使用，请使用其他消息推送方式
 # Bot1来源：https://github.com/Fndroid/tg_push_bot
 # Bot2来源：https://szc.me/post/2.html
-TELEGRAM_ENABLED = 0
-TELEGRAM_BOT_API_URL = 'https://tgbot.lbyczf.com/sendMessage/:your_token'
+TELEGRAM_ENABLED = 1
+TELEGRAM_BOT_API_URL = 'https://tgbot.lbyczf.com/sendMessage/9qvmsoktk7oy2kwl'
 
 # ServerChan 和 PushBear 微信消息推送
 # 使用说明

@@ -8,7 +8,7 @@ import threading
 import functools
 import time
 from time import sleep
-
+from types import MethodType
 
 def singleton(cls):
     """
@@ -167,6 +167,11 @@ def get_true_false_text(value, true='', false=''):
 def sleep_forever_when_in_test():
     if Const.IS_TEST: sleep_forever()
 
+def expand_class(cls, key, value, keep_old=True):
+    if (keep_old):
+        setattr(cls, 'old_' + key, getattr(cls, key))
+    setattr(cls, key, MethodType(value, cls))
+    return cls
 
 def available_value(value):
     if isinstance(value, str) or isinstance(value, bytes):

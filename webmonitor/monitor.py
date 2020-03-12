@@ -16,6 +16,7 @@ for post_title in post_title_list:
 '''
 
 def main():
+    App.test_send_notifications()
     App.run()
 
 if __name__ == '__main__':
