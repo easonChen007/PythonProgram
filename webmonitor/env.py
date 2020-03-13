@@ -48,6 +48,8 @@ DINGTALK_WEBHOOK = 'https://oapi.dingtalk.com/robot/send?access_token=your token
 TELEGRAM_ENABLED = 1
 TELEGRAM_BOT_API_URL = 'https://tgbot.lbyczf.com/sendMessage/9qvmsoktk7oy2kwl'
 
+
+
 # ServerChan 和 PushBear 微信消息推送
 # 使用说明
 # ServerChan     http://sc.ftqq.com
@@ -102,3 +104,6 @@ RAIL_DEVICEID = '' #浏览12306 网站中的Cache的RAIL_DEVICEID 值
 
 TEST_V = 2
 TEST_V2 = 1
+
+#chrome diver 路径
+CHROME_DRIVER_MAC_PATH = '/Users/zzj/Downloads/chromedriver'

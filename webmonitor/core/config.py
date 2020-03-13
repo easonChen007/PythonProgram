@@ -99,6 +99,10 @@ class Config:
     # Default time out
     TIME_OUT_OF_REQUEST = 5
 
+    #chrome diver 路径
+    CHROME_DRIVER_MAC_PATH = ''
+
+
     envs = []
     retry_time = 5
     last_modify_time = 0

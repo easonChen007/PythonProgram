@@ -150,6 +150,9 @@ class Notification():
         }
         response = self.session.request(url=bot_api_url, method='POST', data=data)
         result = response.json().get('result')
+        if not result:
+            CommonLog.add_quick_log(CommonLog.MESSAGE_SEND_TELEGRAM_FAIL.format('连接返回空')).flush()
+            return False  
         response_status = result.get('statusCode')
         if response_status == 200:
             CommonLog.add_quick_log(CommonLog.MESSAGE_SEND_TELEGRAM_SUCCESS).flush()
