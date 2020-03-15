@@ -102,6 +102,8 @@ class Config:
     #chrome diver 路径
     CHROME_DRIVER_MAC_PATH = ''
 
+    #the north face monitor address
+    TNF_WEB_ADDR = []
 
     envs = []
     retry_time = 5

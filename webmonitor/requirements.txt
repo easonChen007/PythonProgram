@@ -31,3 +31,4 @@ websockets==7.0
 Werkzeug==0.15.3
 DingtalkChatbot==1.3.0
 lightpush==0.1.3
+selenium

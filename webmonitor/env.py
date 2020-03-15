@@ -65,8 +65,8 @@ BARK_ENABLED = 0
 BARK_PUSH_URL = 'https://api.day.app/:your_token'
 
 # 输出日志到文件
-OUT_PUT_LOG_TO_FILE_ENABLED = 0
-OUT_PUT_LOG_TO_FILE_PATH = 'runtime/12306.log'  # 日志目录
+OUT_PUT_LOG_TO_FILE_ENABLED = 1
+OUT_PUT_LOG_TO_FILE_PATH = 'runtime/monitor.log'  # 日志目录
 
 # 分布式集群配置
 CLUSTER_ENABLED = 0  # 集群状态
@@ -107,3 +107,11 @@ TEST_V2 = 1
 
 #chrome diver 路径
 CHROME_DRIVER_MAC_PATH = '/Users/zzj/Downloads/chromedriver'
+
+#the north face monitor address
+TNF_WEB_ADDR=[
+    {'product_name':'1990-mountain-jacket-gtx',
+     'addr':'https://www.thenorthface.com/shop/1990-mountain-jacket-gtx-nf0a3xco-c1?variationId=9B8#hero=0'},
+    {'product_name':'mens-apex-risor-jacket',
+     'addr':''}
+]
