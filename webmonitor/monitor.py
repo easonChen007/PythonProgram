@@ -5,7 +5,10 @@ import sys
 
 from core.app import *
 from core.log.common_log import CommonLog
-from core.webStore.thenorthface import TheNorthFace
+#from core.webStore.thenorthface import TheNorthFace
+from core.webStore.stock_trace import Stock_Trace
+#from core.webStore.gshock import CASIO_GSHOCK
+#from core.db.oracle_control import Oracle_Control
 
 '''
 source = requests.get('https://www.thenorthface.com/shop/1990-mountain-jacket-gtx-nf0a3xco-c1?variationId=9B8#hero=0').content
@@ -17,10 +20,17 @@ for post_title in post_title_list:
 '''
 
 def main():
-    App.test_send_notifications()
+    #App.test_send_notifications()
     App.run()
-    tnf = TheNorthFace()
-    tnf.start()
+    #tnf = TheNorthFace()
+    #tnf.start()
+
+    st = Stock_Trace()
+    st.start()
+
+    #ca = CASIO_GSHOCK()
+    #ca.start()
+
 
 
 if __name__ == '__main__':

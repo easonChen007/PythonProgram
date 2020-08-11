@@ -126,6 +126,8 @@ def create_thread_and_run(jobs, callback_name, wait=True, daemon=True, args=(), 
         threads.append(thread)
     if wait:
         for thread in threads: thread.join()
+    
+    threads = []
 
 
 def jobs_do(jobs, do):

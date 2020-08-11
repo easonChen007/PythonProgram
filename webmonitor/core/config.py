@@ -27,7 +27,7 @@ class Config:
     AUTO_CODE_ACCOUNT = {'user': '', 'pwd': ''}
     # 输出日志到文件
     OUT_PUT_LOG_TO_FILE_ENABLED = 0
-    OUT_PUT_LOG_TO_FILE_PATH = 'runtime/12306.log'
+    OUT_PUT_LOG_TO_FILE_PATH = ''
 
     PROJECT_DIR = path.dirname(path.dirname(path.abspath(__file__))) + '/'
 
@@ -69,9 +69,9 @@ class Config:
 
     # ServerChan和PushBear配置
     SERVERCHAN_ENABLED = 0
-    SERVERCHAN_KEY = '8474-ca071ADSFADSF'
+    SERVERCHAN_KEY = ''
     PUSHBEAR_ENABLED = 0
-    PUSHBEAR_KEY = 'SCUdafadsfasfdafdf45234234234'
+    PUSHBEAR_KEY = ''
 
     # 邮箱配置
     EMAIL_ENABLED = 0
@@ -101,7 +101,16 @@ class Config:
 
     #chrome diver 路径
     CHROME_DRIVER_MAC_PATH = ''
+    CHROME_DRIVER_WIN_PATH = ''
 
+    #oracle client address 
+    ORACLE_CLIENT_WIN_PATH = 'E:\instantclient-basic-windows.x64-12.2.0.1.0\instantclient_12_2'
+
+    #oracle server address 
+    ORACLE_SERVER_PATH = 'eason/eason1234@192.168.200.88:1521/orcl'
+    ORACLE_SERVER_USERNAME = 'eason'
+    ORACLE_SERVER_SECRET = 'eason1234'
+    ORACLE_SERVER_CONNECTSTRING = '192.168.200.88:1521/orcl'
     #the north face monitor address
     TNF_WEB_ADDR = []
 

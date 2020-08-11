@@ -13,7 +13,8 @@ QUERY_JOB_THREAD_ENABLED = 0  # 是否开启多线程查询，开启后第个任
 
 # 打码平台账号
 # 目前只支持免费打码接口 和 若快打码，注册地址：http://www.ruokuai.com/login
-AUTO_CODE_PLATFORM = 'free'  # 免费填写 free 若快 ruokuai  # 免费打码无法保证持续可用，如失效请手动切换; 个人打码填写 user 并修改API_USER_CODE_QCR_API 为自己地址
+# 免费填写 free 若快 ruokuai  # 免费打码无法保证持续可用，如失效请手动切换; 个人打码填写 user 并修改API_USER_CODE_QCR_API 为自己地址
+AUTO_CODE_PLATFORM = 'free'
 API_USER_CODE_QCR_API = ''
 AUTO_CODE_ACCOUNT = {  # 使用 free 可用省略
     'user': 'your user name',
@@ -49,7 +50,6 @@ TELEGRAM_ENABLED = 1
 TELEGRAM_BOT_API_URL = 'https://tgbot.lbyczf.com/sendMessage/9qvmsoktk7oy2kwl'
 
 
-
 # ServerChan 和 PushBear 微信消息推送
 # 使用说明
 # ServerChan     http://sc.ftqq.com
@@ -57,16 +57,16 @@ TELEGRAM_BOT_API_URL = 'https://tgbot.lbyczf.com/sendMessage/9qvmsoktk7oy2kwl'
 SERVERCHAN_ENABLED = 0
 SERVERCHAN_KEY = ''
 PUSHBEAR_ENABLED = 0
-PUSHBEAR_KEY = ''
+PUSHBEAR_KEY = '19635-0f2efc0e9911cf5da47cb66ce43c2ba5'
 
 # Bark 推送到ios设备
 # 参考 https://www.v2ex.com/t/467407
-BARK_ENABLED = 0
-BARK_PUSH_URL = 'https://api.day.app/:your_token'
+BARK_ENABLED = 1
+BARK_PUSH_URL = 'https://api.day.app/dobqmRBaKPMiyFXkE4Wzf8/'
 
 # 输出日志到文件
 OUT_PUT_LOG_TO_FILE_ENABLED = 1
-OUT_PUT_LOG_TO_FILE_PATH = 'runtime/monitor.log'  # 日志目录
+OUT_PUT_LOG_TO_FILE_PATH = 'c:/runtime/monitor.log'  # 日志目录
 
 # 分布式集群配置
 CLUSTER_ENABLED = 0  # 集群状态
@@ -80,7 +80,8 @@ REDIS_PASSWORD = ''  # Redis  密码 没有可以留空
 # 邮箱配置
 EMAIL_ENABLED = 0  # 是否开启邮件通知
 EMAIL_SENDER = 'sender@example.com'  # 邮件发送者
-EMAIL_RECEIVER = 'receiver@example.com'  # 邮件接受者 # 可以多个 [email1@gmail.com, email2@gmail.com]
+# 邮件接受者 # 可以多个 [email1@gmail.com, email2@gmail.com]
+EMAIL_RECEIVER = 'receiver@example.com'
 EMAIL_SERVER_HOST = 'localhost'  # 邮件服务 host
 EMAIL_SERVER_USER = ''  # 邮件服务登录用户名
 EMAIL_SERVER_PASSWORD = ''  # 邮件服务登录密码
@@ -95,23 +96,30 @@ WEB_PORT = 8008  # 监听端口
 
 # 是否开启 CDN 查询
 CDN_ENABLED = 0
-CDN_CHECK_TIME_OUT = 1 # 检测单个 cdn 是否可用超时时间
+CDN_CHECK_TIME_OUT = 1  # 检测单个 cdn 是否可用超时时间
 
 # 是否使用浏览器缓存中的RAIL_EXPIRATION 和 RAIL_DEVICEID
 CACHE_RAIL_ID_ENABLED = 0
-RAIL_EXPIRATION = '' #浏览12306 网站中的Cache的RAIL_EXPIRATION 值
-RAIL_DEVICEID = '' #浏览12306 网站中的Cache的RAIL_DEVICEID 值
+RAIL_EXPIRATION = ''  # 浏览12306 网站中的Cache的RAIL_EXPIRATION 值
+RAIL_DEVICEID = ''  # 浏览12306 网站中的Cache的RAIL_DEVICEID 值
 
 TEST_V = 2
 TEST_V2 = 1
 
-#chrome diver 路径
-CHROME_DRIVER_MAC_PATH = '/Users/zzj/Downloads/chromedriver'
+# chrome diver 路径
+CHROME_DRIVER_MAC_PATH = 'E:\chromedriver_win32\chromedriver.exe'
+CHROME_DRIVER_WIN_PATH = 'E:\chromedriver_win32\chromedriver.exe'
 
-#the north face monitor address
-TNF_WEB_ADDR=[
-    {'product_name':'1990-mountain-jacket-gtx',
-     'addr':'https://www.thenorthface.com/shop/1990-mountain-jacket-gtx-nf0a3xco-c1?variationId=9B8#hero=0'},
-    {'product_name':'mens-apex-risor-jacket',
-     'addr':''}
+# the north face monitor address
+TNF_WEB_ADDR = [
+    {'product_name': '1990-mountain-jacket-gtx',
+     'addr': 'https://www.thenorthface.com/shop/1990-mountain-jacket-gtx-nf0a3xco-c1?variationId=9B8#hero=0'},
+    {'product_name': 'mens-apex-risor-jacket',
+     'addr': ''}
+]
+
+# the north face monitor address
+CASIO_WEB_ADDR = [
+    {'product_name': 'GA-2100-1A1PR',
+     'addr': 'https://m.casiostore.com.cn/watch/g-shock/GA-2100/s5200.html'}
 ]
