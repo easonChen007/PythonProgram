@@ -107,8 +107,8 @@ TEST_V = 2
 TEST_V2 = 1
 
 # chrome diver 路径
-CHROME_DRIVER_MAC_PATH = 'E:\chromedriver_win32\chromedriver.exe'
-CHROME_DRIVER_WIN_PATH = 'E:\chromedriver_win32\chromedriver.exe'
+CHROME_DRIVER_MAC_PATH = 'E:\\chromedriver_win32\\chromedriver.exe'
+CHROME_DRIVER_WIN_PATH = 'E:\\chromedriver_win32\\chromedriver.exe'
 
 # the north face monitor address
 TNF_WEB_ADDR = [
@@ -122,4 +122,9 @@ TNF_WEB_ADDR = [
 CASIO_WEB_ADDR = [
     {'product_name': 'GA-2100-1A1PR',
      'addr': 'https://m.casiostore.com.cn/watch/g-shock/GA-2100/s5200.html'}
+]
+
+MADNESS_WEB_ADDR = [
+    {'product_name': 'MADNESS KENDOGI DENIM JACKET',
+     'addr': 'https://www.mdnsonline.com/product/2664/35207cb8'}
 ]

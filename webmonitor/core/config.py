@@ -104,7 +104,7 @@ class Config:
     CHROME_DRIVER_WIN_PATH = ''
 
     #oracle client address 
-    ORACLE_CLIENT_WIN_PATH = 'E:\instantclient-basic-windows.x64-12.2.0.1.0\instantclient_12_2'
+    ORACLE_CLIENT_WIN_PATH = 'E:\\instantclient-basic-windows.x64-12.2.0.1.0\\instantclient_12_2'
 
     #oracle server address 
     ORACLE_SERVER_PATH = 'eason/eason1234@192.168.200.88:1521/orcl'

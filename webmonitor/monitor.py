@@ -7,7 +7,8 @@ from core.app import *
 from core.log.common_log import CommonLog
 #from core.webStore.thenorthface import TheNorthFace
 from core.webStore.stock_trace import Stock_Trace
-#from core.webStore.gshock import CASIO_GSHOCK
+from core.webStore.gshock import CASIO_GSHOCK
+from core.webStore.madness import SEEK_MADNESS
 #from core.db.oracle_control import Oracle_Control
 
 '''
@@ -25,11 +26,11 @@ def main():
     #tnf = TheNorthFace()
     #tnf.start()
 
-    st = Stock_Trace()
-    st.start()
+    #st = Stock_Trace()
+    #st.start()
 
-    #ca = CASIO_GSHOCK()
-    #ca.start()
+    ca = SEEK_MADNESS()
+    ca.start()
 
 
 
